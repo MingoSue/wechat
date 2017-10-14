@@ -1,0 +1,19 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+<p style="margin-left: 10px; color: #cc6600; font-size: x-large">
+    <strong>Here are information:</strong>
+</p>
+{% for i in info %}
+<p style="margin-left: 15px">
+   {{ i.id }}&nbsp;&nbsp;:&nbsp;&nbsp;{{ i }}<br>
+</p>
+{% endfor %}
+<p style="margin-left: 10px; color: #cc6600; font-size: large">
+    <a href="{% url 'info:index' %}">Home</a>
+</p>
+</body>
+</html>
