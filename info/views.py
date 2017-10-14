@@ -4,6 +4,7 @@ from urllib.request import urlopen
 
 # Create your views here.
 def index(request):
+    # 获取code
     code = request.GET.get('code')
     Code.objects.create(code=code)
     return render(request, 'info/index.html')
